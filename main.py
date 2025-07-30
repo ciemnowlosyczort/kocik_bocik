@@ -37,7 +37,7 @@ async def scrape_olx():
 
     try:
         # --- Selenium setup ---
-        chrome_driver_path = "./driver/chromedriver.exe"
+        chrome_driver_path = "/usr/bin/chromedriver"
         options = Options()
         options.add_argument("--headless")
         options.add_argument("--no-sandbox")
