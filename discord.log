@@ -1,0 +1,297 @@
+[2025-07-27 14:52:23] [WARNING ] discord.ext.commands.bot: Privileged message content intent is missing, commands may not work as expected.
+[2025-07-27 14:52:23] [INFO    ] discord.client: logging in using static token
+[2025-07-27 14:52:23] [DEBUG   ] discord.http: GET https://discord.com/api/v10/users/@me with None has returned 200
+[2025-07-27 14:52:23] [DEBUG   ] discord.http: GET /users/@me has found its initial rate limit bucket hash (78bb8553d9352a5a2f89f9def401287a).
+[2025-07-27 14:52:23] [DEBUG   ] discord.http: GET https://discord.com/api/v10/users/@me has received {'id': '1396567929012748440', 'username': 'BOT OLX', 'avatar': None, 'discriminator': '4779', 'public_flags': 0, 'flags': 0, 'bot': True, 'banner': None, 'accent_color': None, 'global_name': None, 'avatar_decoration_data': None, 'collectibles': None, 'display_name_styles': None, 'banner_color': None, 'clan': None, 'primary_guild': None, 'mfa_enabled': False, 'locale': 'en-US', 'premium_type': 0, 'email': None, 'verified': True, 'bio': ''}
+[2025-07-27 14:52:24] [DEBUG   ] discord.http: GET https://discord.com/api/v10/oauth2/applications/@me with None has returned 200
+[2025-07-27 14:52:24] [DEBUG   ] discord.http: GET /oauth2/applications/@me has found its initial rate limit bucket hash (d28a133af187e91d71d96a223467ce49).
+[2025-07-27 14:52:24] [DEBUG   ] discord.http: GET https://discord.com/api/v10/oauth2/applications/@me has received {'id': '1396567929012748440', 'name': 'BOT OLX', 'icon': None, 'description': '', 'type': None, 'bot': {'id': '1396567929012748440', 'username': 'BOT OLX', 'avatar': None, 'discriminator': '4779', 'public_flags': 0, 'flags': 0, 'bot': True, 'banner': None, 'accent_color': None, 'global_name': None, 'avatar_decoration_data': None, 'collectibles': None, 'display_name_styles': None, 'banner_color': None, 'clan': None, 'primary_guild': None}, 'summary': '', 'is_monetized': False, 'is_verified': False, 'is_discoverable': False, 'bot_public': True, 'bot_require_code_grant': False, 'install_params': {'scopes': ['applications.commands'], 'permissions': '0'}, 'integration_types_config': {'0': {'oauth2_install_params': {'scopes': ['applications.commands'], 'permissions': '0'}}, '1': {'oauth2_install_params': {'scopes': ['applications.commands'], 'permissions': '0'}}}, 'verify_key': 'ca65645d12fa8e3adb487066710df21eacb9b3ef5a91e6033f92e103bca27bea', 'flags': 557056, 'hook': True, 'storefront_available': False, 'redirect_uris': [], 'interactions_endpoint_url': None, 'role_connections_verification_url': None, 'owner': {'id': '368351742728863747', 'username': 'skurwisyn', 'avatar': 'e737b7838daf6c5161484764e410acb4', 'discriminator': '0', 'public_flags': 0, 'flags': 0, 'banner': None, 'accent_color': None, 'global_name': None, 'avatar_decoration_data': None, 'collectibles': None, 'display_name_styles': None, 'banner_color': None, 'clan': None, 'primary_guild': None}, 'approximate_guild_count': 0, 'approximate_user_install_count': 0, 'approximate_user_authorization_count': 0, 'interactions_event_types': [], 'interactions_version': 1, 'explicit_content_filter': 0, 'rpc_application_state': 0, 'store_application_state': 1, 'verification_state': 1, 'integration_public': True, 'integration_require_code_grant': False, 'discoverability_state': 1, 'discovery_eligibility_flags': 224, 'monetization_state': 1, 'verification_eligibility_flags': 91036, 'monetization_eligibility_flags': 181988, 'team': None, 'internal_guild_restriction': 2, 'approved_consoles': []}
+[2025-07-27 14:52:24] [DEBUG   ] discord.gateway: Created websocket connected to wss://gateway.discord.gg/
+[2025-07-27 14:52:24] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['["gateway-prd-us-east1-b-s4p9",{"micros":0.0}]']}}
+[2025-07-27 14:52:24] [DEBUG   ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2025-07-27 14:52:24] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 14:52:24] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'READY', 's': 1, 'op': 0, 'd': {'v': 10, 'user_settings': {}, 'user': {'verified': True, 'username': 'BOT OLX', 'primary_guild': None, 'mfa_enabled': False, 'id': '1396567929012748440', 'global_name': None, 'flags': 0, 'email': None, 'discriminator': '4779', 'clan': None, 'bot': True, 'avatar': None}, 'session_type': 'normal', 'session_id': 'fb59012f7916ebd86630451da4ae2aaa', 'resume_gateway_url': 'wss://gateway-us-east1-b.discord.gg', 'relationships': [], 'private_channels': [], 'presences': [], 'guilds': [{'unavailable': True, 'id': '1399003808335527997'}], 'guild_join_requests': [], 'geo_ordered_rtc_regions': ['warsaw', 'frankfurt', 'frankfurt-two', 'milan', 'bucharest'], 'game_relationships': [], 'auth': {}, 'application': {'id': '1396567929012748440', 'flags': 557056}, '_trace': ['["gateway-prd-us-east1-b-s4p9",{"micros":143740,"calls":["id_created",{"micros":526,"calls":[]},"session_lookup_time",{"micros":1222,"calls":[]},"session_lookup_finished",{"micros":13,"calls":[]},"discord-sessions-prd-2-22",{"micros":141661,"calls":["start_session",{"micros":112790,"calls":["discord-api-rpc-6b75696855-vtd7b",{"micros":88628,"calls":["get_user",{"micros":5555},"get_guilds",{"micros":2623},"send_scheduled_deletion_message",{"micros":14},"guild_join_requests",{"micros":2308},"authorized_ip_coro",{"micros":10},"pending_payments",{"micros":11841},"apex_experiments",{"micros":4674},"user_activities",{"micros":5},"played_application_ids",{"micros":3}]}]},"starting_guild_connect",{"micros":28,"calls":[]},"presence_started",{"micros":3354,"calls":[]},"guilds_started",{"micros":84,"calls":[]},"lobbies_started",{"micros":7,"calls":[]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":25383,"calls":[]},"connect_finished",{"micros":25385,"calls":[]},"build_ready",{"micros":11,"calls":[]},"clean_ready",{"micros":0,"calls":[]},"optimize_ready",{"micros":1,"calls":[]},"split_ready",{"micros":0,"calls":[]}]}]}]']}}
+[2025-07-27 14:52:24] [DEBUG   ] discord.client: Dispatching event socket_event_type
+[2025-07-27 14:52:24] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: fb59012f7916ebd86630451da4ae2aaa).
+[2025-07-27 14:52:24] [DEBUG   ] discord.client: Dispatching event connect
+[2025-07-27 14:52:24] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'GUILD_CREATE', 's': 2, 'op': 0, 'd': {'nsfw': False, 'owner_configured_content_level': 0, 'max_video_channel_users': 25, 'lazy': True, 'profile': None, 'inventory_settings': None, 'premium_subscription_count': 0, 'application_id': None, 'moderator_reporting': None, 'activity_instances': [], 'voice_states': [], 'banner': None, 'public_updates_channel_id': None, 'stickers': [], 'id': '1399003808335527997', 'roles': [{'version': 1753618900378, 'unicode_emoji': None, 'tags': {}, 'position': 0, 'permissions': '2248473465835073', 'name': '@everyone', 'mentionable': False, 'managed': False, 'id': '1399003808335527997', 'icon': None, 'hoist': False, 'flags': 0, 'colors': {'tertiary_color': None, 'secondary_color': None, 'primary_color': 0}, 'color': 0}, {'version': 1753619020921, 'unicode_emoji': None, 'tags': {'bot_id': '1396567929012748440'}, 'position': 1, 'permissions': '1690276058229824', 'name': 'BOT OLX', 'mentionable': False, 'managed': True, 'id': '1399004314751733844', 'icon': None, 'hoist': False, 'flags': 0, 'colors': {'tertiary_color': None, 'secondary_color': None, 'primary_color': 0}, 'color': 0}], 'nsfw_level': 0, 'name': 'Serwer użytkownika skurwisyn', 'mfa_level': 0, 'max_members': 25000000, 'system_channel_id': '1399003809358807134', 'embedded_activities': [], 'large': False, 'threads': [], 'members': [{'user': {'username': 'BOT OLX', 'public_flags': 0, 'primary_guild': None, 'id': '1396567929012748440', 'global_name': None, 'display_name': None, 'discriminator': '4779', 'collectibles': None, 'bot': True, 'avatar_decoration_data': None, 'avatar': None}, 'roles': ['1399004314751733844'], 'premium_since': None, 'pending': False, 'nick': None, 'mute': False, 'joined_at': '2025-07-27T12:23:40.953392+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'banner': None, 'avatar': None}], 'splash': None, 'icon': 'e885d50ab55c9deee5f8931a363ec405', 'discovery_splash': None, 'latest_onboarding_question_id': None, 'explicit_content_filter': 0, 'description': None, 'premium_tier': 0, 'home_header': None, 'application_command_counts': {}, 'guild_scheduled_events': [], 'unavailable': False, 'safety_alerts_channel_id': None, 'default_message_notifications': 0, 'afk_timeout': 300, 'preferred_locale': 'en-US', 'stage_instances': [], 'incidents_data': None, 'premium_features': None, 'hub_type': None, 'member_count': 2, 'features': [], 'system_channel_flags': 0, 'emojis': [], 'region': 'deprecated', 'verification_level': 0, 'owner_id': '368351742728863747', 'channels': [{'version': 1753618900391, 'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Kanały tekstowe', 'id': '1399003809358807132', 'flags': 0}, {'version': 1753618900394, 'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Kanały głosowe', 'id': '1399003809358807133', 'flags': 0}, {'version': 1753618900399, 'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '1399003809358807132', 'name': 'ogólny', 'last_message_id': '1399004315615760475', 'id': '1399003809358807134', 'icon_emoji': {'name': '👋', 'id': None}, 'flags': 0}, {'version': 1753618900408, 'user_limit': 0, 'type': 2, 'rtc_region': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '1399003809358807133', 'name': 'Ogólne', 'last_message_id': None, 'id': '1399003809358807135', 'icon_emoji': {'name': '🎙', 'id': None}, 'flags': 0, 'bitrate': 64000}], 'version': 1753618900415, 'soundboard_sounds': [], 'presences': [], 'max_stage_video_channel_users': 50, 'vanity_url_code': None, 'afk_channel_id': None, 'joined_at': '2025-07-27T12:23:40.953392+00:00', 'premium_progress_bar_enabled': False, 'rules_channel_id': None}}
+[2025-07-27 14:52:24] [DEBUG   ] discord.client: Dispatching event socket_event_type
+[2025-07-27 14:52:24] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'GUILD_MEMBERS_CHUNK', 's': 3, 'op': 0, 'd': {'nonce': '41ecd0ceca522d0cabd7f7ac02691e1c', 'members': [{'user': {'username': 'skurwisyn', 'public_flags': 0, 'primary_guild': None, 'id': '368351742728863747', 'global_name': None, 'display_name': None, 'discriminator': '0', 'collectibles': None, 'bot': False, 'avatar_decoration_data': None, 'avatar': 'e737b7838daf6c5161484764e410acb4'}, 'roles': [], 'premium_since': None, 'pending': False, 'nick': None, 'mute': False, 'joined_at': '2025-07-27T12:21:40.288000+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'banner': None, 'avatar': None}, {'user': {'username': 'BOT OLX', 'public_flags': 0, 'primary_guild': None, 'id': '1396567929012748440', 'global_name': None, 'display_name': None, 'discriminator': '4779', 'collectibles': None, 'bot': True, 'avatar_decoration_data': None, 'avatar': None}, 'roles': ['1399004314751733844'], 'premium_since': None, 'pending': False, 'nick': None, 'mute': False, 'joined_at': '2025-07-27T12:23:40.953392+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'banner': None, 'avatar': None}], 'guild_id': '1399003808335527997', 'chunk_index': 0, 'chunk_count': 1}}
+[2025-07-27 14:52:24] [DEBUG   ] discord.client: Dispatching event socket_event_type
+[2025-07-27 14:52:24] [DEBUG   ] discord.state: Processed a chunk for 2 members in guild ID 1399003808335527997.
+[2025-07-27 14:52:26] [DEBUG   ] discord.client: Dispatching event guild_available
+[2025-07-27 14:52:26] [DEBUG   ] discord.client: Dispatching event ready
+[2025-07-27 14:53:05] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 3.
+[2025-07-27 14:53:05] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 14:53:36] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'GUILD_ROLE_UPDATE', 's': 4, 'op': 0, 'd': {'role': {'version': 1753620816154, 'unicode_emoji': None, 'tags': {'bot_id': '1396567929012748440'}, 'position': 1, 'permissions': '1690276058229824', 'name': 'BOT OLX', 'mentionable': False, 'managed': True, 'id': '1399004314751733844', 'icon': None, 'hoist': False, 'flags': 0, 'description': None, 'colors': {'tertiary_color': None, 'secondary_color': None, 'primary_color': 0}, 'color': 0}, 'guild_id': '1399003808335527997'}}
+[2025-07-27 14:53:36] [DEBUG   ] discord.client: Dispatching event socket_event_type
+[2025-07-27 14:53:36] [DEBUG   ] discord.client: Dispatching event guild_role_update
+[2025-07-27 14:53:46] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 14:53:46] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 14:54:28] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 14:54:28] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 14:55:09] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 14:55:09] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 14:55:50] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 14:55:50] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 14:56:31] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 14:56:32] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 14:57:13] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 14:57:13] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 14:57:54] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 14:57:54] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 14:58:35] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 14:58:35] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 14:59:16] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 14:59:17] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 14:59:58] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 14:59:58] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:00:39] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:00:39] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:01:20] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:01:20] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:02:01] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:02:02] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:02:43] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:02:43] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:03:24] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:03:24] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:04:05] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:04:05] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:04:47] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:04:47] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:05:28] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:05:28] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:06:09] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:06:09] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:06:50] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:06:50] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:07:32] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:07:32] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:08:13] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:08:13] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:08:54] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:08:54] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:09:35] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:09:35] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:10:17] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:10:17] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:10:58] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:10:58] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:11:39] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:11:39] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:12:20] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:12:20] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:13:02] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:13:02] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:13:43] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:13:43] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:14:24] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:14:24] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:15:05] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:15:05] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:15:47] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:15:47] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:16:28] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:16:28] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:17:09] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:17:09] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:17:50] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:17:51] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:18:32] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:18:32] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:19:13] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:19:13] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:19:54] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:19:54] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:20:35] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:20:36] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:21:17] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:21:17] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:21:58] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:21:58] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:22:39] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:22:39] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:23:20] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:23:21] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:24:02] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:24:02] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:24:43] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:24:43] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:25:24] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:25:24] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:26:05] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:26:06] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:26:47] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:26:47] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:27:28] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:27:28] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:28:09] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:28:09] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:28:51] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:28:51] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:29:32] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:29:32] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:30:13] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:30:13] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:30:54] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:30:54] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:31:36] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:31:36] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:32:17] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:32:17] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:32:58] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:32:58] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:33:39] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:33:39] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:34:21] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:34:21] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:35:02] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:35:02] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:35:43] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:35:43] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:36:24] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:36:25] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:37:06] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:37:06] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:37:47] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:37:47] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:38:28] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:38:28] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:39:09] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:39:10] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:39:51] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:39:51] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:40:32] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:40:32] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:41:13] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:41:13] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:41:54] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:41:55] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:42:36] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:42:36] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:43:17] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:43:17] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:43:58] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:43:58] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:44:39] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:44:40] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:45:21] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:45:21] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:46:02] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:46:02] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:46:43] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:46:43] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:47:24] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:47:25] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:48:06] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:48:06] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:48:47] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:48:47] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:49:28] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:49:28] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:50:10] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:50:10] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:50:51] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:50:51] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:51:32] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:51:32] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:52:13] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:52:13] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:52:55] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:52:55] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:53:36] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:53:36] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:54:17] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:54:17] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:54:58] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:54:58] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:55:40] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:55:40] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:56:21] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:56:21] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:57:02] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:57:02] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:57:43] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:57:43] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:58:25] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:58:25] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:59:06] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:59:06] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 15:59:47] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 15:59:47] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 16:00:28] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 16:00:29] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 16:01:10] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 16:01:10] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 16:01:51] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 16:01:51] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 16:02:32] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 16:02:32] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 16:03:13] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 16:03:14] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 16:03:55] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 16:03:55] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 16:04:36] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 16:04:36] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 16:05:17] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 16:05:17] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 16:05:58] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 16:05:59] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 16:06:40] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 16:06:40] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 16:07:21] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 16:07:21] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 16:08:02] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 16:08:02] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 16:08:43] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 16:08:44] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 16:09:25] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 16:09:25] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 16:10:06] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 16:10:06] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 16:10:47] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 16:10:47] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 16:11:28] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 16:11:29] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 16:12:10] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 16:12:10] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 16:12:51] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 16:12:51] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 16:13:32] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 16:13:32] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 16:14:14] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 16:14:14] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 16:14:55] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 16:14:55] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 16:15:36] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 16:15:36] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 16:16:17] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 16:16:17] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 16:16:59] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 16:16:59] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 16:17:40] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 16:17:40] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 16:18:21] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 16:18:21] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 16:19:02] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 16:19:02] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 16:19:44] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 16:19:44] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 16:20:25] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 16:20:25] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 16:21:06] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+[2025-07-27 16:21:06] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 16:21:16] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'GUILD_UPDATE', 's': 5, 'op': 0, 'd': {'owner_configured_content_level': 0, 'id': '1399003808335527997', 'verification_level': 0, 'preferred_locale': 'en-US', 'afk_channel_id': None, 'guild_id': '1399003808335527997', 'inventory_settings': None, 'vanity_url_code': None, 'splash': None, 'icon': 'e885d50ab55c9deee5f8931a363ec405', 'widget_enabled': False, 'rules_channel_id': None, 'premium_tier': 0, 'nsfw': False, 'system_channel_flags': 0, 'system_channel_id': '1399003809358807134', 'version': 1753626076334, 'max_members': 25000000, 'afk_timeout': 300, 'application_id': None, 'hub_type': None, 'latest_onboarding_question_id': None, 'banner': None, 'nsfw_level': 0, 'max_stage_video_channel_users': 50, 'max_video_channel_users': 25, 'premium_subscription_count': 0, 'region': 'deprecated', 'features': [], 'premium_progress_bar_enabled': False, 'safety_alerts_channel_id': None, 'description': None, 'roles': [{'version': 1753618900378, 'unicode_emoji': None, 'position': 0, 'permissions': '2248473465835073', 'name': '@everyone', 'mentionable': False, 'managed': False, 'id': '1399003808335527997', 'icon': None, 'hoist': False, 'flags': 0, 'description': None, 'colors': {'tertiary_color': None, 'secondary_color': None, 'primary_color': 0}, 'color': 0}, {'version': 1753620816154, 'unicode_emoji': None, 'tags': {'bot_id': '1396567929012748440'}, 'position': 1, 'permissions': '1690276058229824', 'name': 'BOT OLX', 'mentionable': False, 'managed': True, 'id': '1399004314751733844', 'icon': None, 'hoist': False, 'flags': 0, 'description': None, 'colors': {'tertiary_color': None, 'secondary_color': None, 'primary_color': 0}, 'color': 0}], 'owner_id': '368351742728863747', 'incidents_data': None, 'emojis': [], 'public_updates_channel_id': None, 'widget_channel_id': None, 'home_header': None, 'stickers': [], 'discovery_splash': None, 'explicit_content_filter': 0, 'default_message_notifications': 0, 'mfa_level': 0, 'name': 'Serwer użytkownika skurwisyn', 'max_presences': None}}
+[2025-07-27 16:21:16] [DEBUG   ] discord.client: Dispatching event socket_event_type
+[2025-07-27 16:21:16] [DEBUG   ] discord.client: Dispatching event guild_update
+[2025-07-27 16:21:47] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 5.
+[2025-07-27 16:21:47] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 16:22:29] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 5.
+[2025-07-27 16:22:29] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 16:23:10] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 5.
+[2025-07-27 16:23:10] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 16:23:51] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 5.
+[2025-07-27 16:23:51] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2025-07-27 16:24:32] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 5.
+[2025-07-27 16:24:32] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
