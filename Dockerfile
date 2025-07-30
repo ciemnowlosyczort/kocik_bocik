@@ -1,46 +1,59 @@
+# 🧱 Bazowy obraz
 FROM python:3.11-slim
 
-# Instalacja zależności systemowych
+# 🌍 Ustaw zmienne środowiskowe
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
+ENV CHROME_DRIVER_VERSION=138.0.7204.183
+
+# 📁 Ustaw katalog roboczy
+WORKDIR /app
+
+# 📦 Zainstaluj zależności systemowe
 RUN apt-get update && apt-get install -y \
     wget \
     unzip \
     curl \
     gnupg \
+    ca-certificates \
     fonts-liberation \
-    libatk-bridge2.0-0 \
-    libnss3 \
-    libxss1 \
-    libappindicator3-1 \
     libasound2 \
-    libgbm-dev \
+    libatk-bridge2.0-0 \
+    libatk1.0-0 \
+    libcups2 \
+    libdbus-1-3 \
+    libgdk-pixbuf2.0-0 \
+    libnspr4 \
+    libnss3 \
+    libx11-xcb1 \
+    libxcomposite1 \
+    libxdamage1 \
+    libxrandr2 \
+    xdg-utils \
+    libu2f-udev \
+    libvulkan1 \
+    libxss1 \
     libxshmfence1 \
-    libgtk-3-0 \
-    xvfb \
-    && rm -rf /var/lib/apt/lists/*
+    --no-install-recommends && \
+    rm -rf /var/lib/apt/lists/*
 
-# Instalacja Google Chrome
-RUN curl -fsSL https://dl.google.com/linux/linux_signing_key.pub | gpg --dearmor -o /etc/apt/trusted.gpg.d/google.gpg
-RUN echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list
-RUN apt-get update && apt-get install -y google-chrome-stable
+# 🌐 Zainstaluj Google Chrome (oficjalny build)
+RUN wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && \
+    apt-get update && apt-get install -y ./google-chrome-stable_current_amd64.deb && \
+    rm google-chrome-stable_current_amd64.deb
 
-# Instalacja odpowiedniego ChromeDrivera
-RUN CHROME_VERSION=$(google-chrome --version | grep -oP '\d+\.\d+\.\d+') \
- && DRIVER_VERSION=$(curl -s "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_VERSION") \
- && wget -q "https://chromedriver.storage.googleapis.com/${DRIVER_VERSION}/chromedriver_linux64.zip" \
- && unzip chromedriver_linux64.zip \
- && mv chromedriver /usr/bin/chromedriver \
- && chmod +x /usr/bin/chromedriver \
- && rm chromedriver_linux64.zip
+# 🧰 Zainstaluj ChromeDriver w wersji 138.0.7204.183 (dopasowana do Chrome)
+RUN wget -q https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/${CHROME_DRIVER_VERSION}/linux64/chromedriver-linux64.zip && \
+    unzip chromedriver-linux64.zip && \
+    mv chromedriver-linux64/chromedriver /usr/bin/chromedriver && \
+    chmod +x /usr/bin/chromedriver && \
+    rm -rf chromedriver-linux64.zip chromedriver-linux64
 
-# Ustaw katalog roboczy
-WORKDIR /app
+# 📄 Skopiuj pliki projektu
+COPY . /app
 
-# Kopiuj wymagania i zainstaluj
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+# 🔧 Zainstaluj zależności z requirements.txt
+RUN pip install --upgrade pip && pip install -r requirements.txt
 
-# Kopiuj aplikację
-COPY . .
-
-# Uruchamianie bota z xvfb (wirtualny ekran)
-CMD ["xvfb-run", "python", "main.py"]
+# ▶️ Uruchom bota
+CMD ["python", "main.py"]
